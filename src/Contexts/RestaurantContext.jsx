@@ -15,7 +15,7 @@ const RestaurantProvider = ({ children }) => {
     useEffect(() => {
         const fetchRestaurants = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/restaurants");
+                const response = await axios.get("hhttps://restaurant-app-backend-95kp.onrender.com/api/restaurants");
                 setRestaurants(response.data);
             } catch (error) {
                 console.error("Error fetching restaurants:", error.message);
